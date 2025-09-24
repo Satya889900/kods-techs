@@ -1,0 +1,192 @@
+.form-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.doctor-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.doctor-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.doctor-form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.doctor-form button {
+  padding: 10px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.doctor-form button:hover {
+  background: #2980b9;
+}
+/* Page container with background image */
+/* Wrapper with background carousel */
+.add-doctor-wrapper {
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Background carousel */
+.bg-carousel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  z-index: -2;
+}
+
+/* Semi-transparent overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Foreground container */
+.add-doctor-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 50px auto;
+  gap: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+/* Left Panel */
+.left-panel {
+  width: 90%;
+}
+
+/* Right Panel */
+.right-panel {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.carousel-img {
+  width: 190%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0.3;
+  transition: all 0.5s;
+}
+
+.carousel-img.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Form */
+.doctor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #000;
+}
+
+.input-group .icon {
+  margin-right: 10px;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  flex: 1;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Doctor List */
+.doctor-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.doctor-card {
+  width: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  background-color: #fff;
+  color: #000;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+}
+
+.doctor-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.doctor-info {
+  padding: 10px;
+}
