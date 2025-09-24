@@ -106,7 +106,7 @@ export default function Home() {
   const sideCarouselImages = Array.from({ length: 5 }, (_, i) => ({
     src: `https://picsum.photos/200/200?random=${i + 1}`,
     text: `Info about side image ${i + 1}`
-  }));
+  }));   
 
   const hospitalSlides = [
     {
